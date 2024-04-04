@@ -1,0 +1,48 @@
+h1 {
+  font-size: 290%; /* Размер шрифта */
+  border-bottom: 4px solid maroon; /* Параметры линии под текстом */
+  font-weight: normal; /* Убираем жирное начертание */
+  padding-bottom: 5px; /* Расстояние от текста до линии */
+ }
+ input{
+  border-color: maroon;
+  height: 40px;
+  border-width: 3px;
+  width: 140px;
+  text-align: center;
+  
+  }
+ 
+  button{
+  margin-top: 10px;
+  background-color: maroon;
+  border-color: rgb(159, 59, 19);
+  color: rgb(255, 255, 255);
+  width: 110px;
+  height: 33px;
+  min-height:47px; 
+    min-width: 170px;
+    border-radius:10px;
+    cursor: pointer;
+    font-size: 130%;
+    
+ }
+p{
+  
+  margin-top: 50px;
+  border: 5px solid rgb(197, 55, 55);
+  width: 750px;
+  font-size: 230%;
+}
+div{
+  margin: 20px;
+  font-size: 150%;
+}
+a{
+  text-decoration: underline lightcoral;
+}
+@media screen and (max-width: 600px){
+  div#result{
+    font-size: 150%;
+}
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="icon" type="image/png" sizes="32x32" href="static/images/calculator_14445.png">
+    <link rel="stylesheet" href="static/styles/style.css">
+    <title>Переводчик онлайн</title>
+    <style>
+      /* Add some basic styling */
+      body {
+        font-family: Arial, sans-serif;
+      }
+      #output {
+        margin-top: 20px;
+        white-space: pre-wrap;
+      }
+    </style>
+  </head>
+  <body align="center">
+    <!-- Display the menu for selecting the conversion type -->
+    <h1>Переводчик для систем счисления</h1>
+    <div id="menu">
+    
+    <div><input input id="number" placeholder="Введите число" style="font-size: 55%;" /></div>
+    <div>Из какой системы счисления переводить: <input id="m" /></div>
+    <div>В какую систему счисления переводить: <input id="n" /></div>
+      
+      
+    </div>
+
+
+    <div>
+      <button id="count">Перевести</button>
+    </div>
+
+
+    <div id="result" style="font-size: 160%;">Результат:</div>
+
+     
+
+  
+    <center>
+      <p>
+        <a href="page1.html" style="color: rgb(81, 4, 4);">Как осуществляется перевод чисел между разными системами счисления?</a>
+      </p>
+      <p>
+        <a href="page2.html" style="color: rgb(81, 4, 4);">Что такое системы счисления?</a>
+      </p>
+    </center>
+
+     
+      
+
+    <script>
+      function conwerter() {
+                    var number = document.getElementById("number").value;
+                    var m = +document.getElementById("m").value;
+                    var n = +document.getElementById("n").value;
+    
+                    var res = parseInt(number, m).toString(n); 
+    
+                    document.getElementById("result").innerHTML = "Результат: " + res;
+                }
+                document.getElementById("count").addEventListener("click", conwerter);
+    </script>
+  </body>
+</html>
