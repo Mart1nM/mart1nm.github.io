@@ -21,11 +21,11 @@ h1 {
   width: 110px;
   height: 33px;
   min-height:47px; 
-    min-width: 170px;
+    min-width: 195px;
     border-radius:10px;
     cursor: pointer;
     font-size: 130%;
-    
+    text-align: center;
  }
 p{
   
